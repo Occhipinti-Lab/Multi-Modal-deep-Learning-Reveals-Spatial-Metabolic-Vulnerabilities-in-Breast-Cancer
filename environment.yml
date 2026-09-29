@@ -1,0 +1,56 @@
+# Conda environment for Metabolic Vulnerabilities Analysis
+# Create: conda env create -f environment.yml
+# Activate: conda activate metabolic-vulnerabilities
+
+name: metabolic-vulnerabilities
+channels:
+  - conda-forge
+  - pytorch
+  - bioconda
+  - defaults
+
+dependencies:
+  # Python version
+  - python>=3.9,<3.12
+  
+  # Core Scientific Computing
+  - numpy>=1.21
+  - pandas>=1.4
+  - scipy>=1.7
+  
+  # Spatial Transcriptomics
+  - scanpy>=1.9
+  - anndata>=0.8
+  - squidpy>=1.2
+  
+  # Deep Learning (PyTorch)
+  - pytorch>=1.12
+  - torchvision>=0.13
+  
+  # Machine Learning
+  - scikit-learn>=1.0
+  
+  # Visualization
+  - matplotlib>=3.5
+  - seaborn>=0.12
+  
+  # Statistical Analysis
+  - statsmodels>=0.13
+  
+  # Jupyter
+  - jupyter
+  - jupyterlab>=3.0
+  - ipykernel
+  - ipywidgets
+  
+  # Progress Bars
+  - tqdm
+  
+  # File I/O
+  - h5py
+  - openpyxl
+  
+  # Pip dependencies
+  - pip
+  - pip:
+    - gseapy>=1.0
